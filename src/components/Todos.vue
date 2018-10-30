@@ -35,9 +35,6 @@
         <li><a href="https://www.instagram.com/salihbozdemir1"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
       </ul>
     </footer>
-    <footer class="info">
-      <p>Double-click edit a todo</p>
-    </footer>
   </div>
 </template>
 
@@ -372,30 +369,6 @@ export default {
   .filters li a.selected {
     border-color: rgba(175, 5, 8, 0.9);
   }
-
-  .info {
-    position: absolute;
-    bottom:-80%;
-    left:40%;
-    color: #bfbfbf;
-    font-size: 18px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    text-align: center;
-  }
-
-  .info p {
-    line-height: 1;
-  }
-
-  .info a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: 400;
-  }
-
-  .info a:hover {
-    text-decoration: underline;
-  }
   @media screen and (-webkit-min-device-pixel-ratio:0) {
     .toggle-all,
     .todo-list li .toggle {
@@ -552,24 +525,6 @@ export default {
     transform:translate(-50%,-50%);
     background:#000;
     filter: blur(10px) contrast(20);
-  }
-  .blob-1,.blob-2{
-    width:70px;
-    height:70px;
-    position:absolute;
-    background:#fff;
-    border-radius:50%;
-    top:50%;left:50%;
-    transform:translate(-50%,-50%);
-  }
-  .blob-1{
-    left:20%;
-    animation:osc-l 2.5s ease infinite;
-  }
-  .blob-2{
-    left:80%;
-    animation:osc-r 2.5s ease infinite;
-    background:#0ff;
   }
   @keyframes osc-l{
     0%{left:20%;}
